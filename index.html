@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Timothy Moore Portfolio</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400%7cUbuntu+Condensed%7cAmaranth' rel='stylesheet'>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+  <body>
+
+    <div class="container">
+
+      <header>
+        <div class="row">
+          <div class="logo col-xs-6 col-sm-3 col-md-2">
+            <a href="#"><img class="img-responsive" src="images/Monkeylogo.svg" alt="Monkey Logo"></a>
+          </div>
+          <div class="title-area col-small-9 col-md-10 text-right">
+            <h1>Timothy <span class="last-name-first-letter">M</span>oore</h1>
+            <h2>Front-End Ninja</h2>
+          </div>
+        </div>
+
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+
+            <!-- Navbar and mobile menu toggle -->
+            <!-- Used Bootstrap documentation navbar example as the basis for customization  -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <!-- Hamburger Menu Icon -->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Menu items -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <!-- TODO: Make pages for about, resume, and contact -->
+                <li class="active"><a href="#">Home</a></li>
+                <li class="inactive"><a href="#">About</a></li>
+                <li class="inactive"><a href="#">Resume</a></li>
+                <li class="inactive"><a href="#">Contact</a></li>
+              </ul>
+            </div><!-- End .navbar-collapse -->
+
+          </div><!-- End .container-fluid -->
+        </nav>
+      </header>
+
+      <main>
+        <!-- Featured image -->
+        <!-- Writing on chalk board is in "Cabin Sketch" font from Google Fonts-->
+        <div class="row">
+          <div class="col-md-12">
+            <img class="img-responsive large-featured" src="images/bunny-400.png" srcset="images/bunny-1140.png 1140w, images/bunny-940.png 940w, images/bunny-720.png 720w, images/bunny-550.png 550w, images/bunny-400.png 400w" sizes="100vw" alt="Bunny Waving">
+          </div>
+        </div>
+
+        <!-- Featured work heading -->
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="featured-heading">Featured Work</h3>
+          </div>
+        </div>
+
+        <!-- Featured work example pieces with modals for further description -->
+        <div class="row">
+
+            <div class="col-xs-6 col-sm-6 col-md-4 portfolio-piece">
+              <img class="img-responsive" src="images/Aug_Retina_Portfolio-400.jpg" srcset="images/Aug_Retina_Portfolio-500.jpg 500w, images/Aug_Retina_Portfolio-400.jpg 400w, images/Aug_Retina_Portfolio-300.jpg 300w" sizes="(min-width: 992px) 33.3vw, (min-width: 768px) 50vw, 100vw" data-toggle="modal" data-target="#aug-retina" alt="Augusta Retina Consultants Website">
+              <h4>Augusta Retina Consultants</h4>
+              <a href="http://www.augustaretina.com">http://www.augustaretina.com</a>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 portfolio-piece">
+              <img class="img-responsive" src="images/MI_porftolio_project-400.jpg" srcset="images/MI_porftolio_project-500.jpg 500w, images/MI_porftolio_project-400.jpg 400w, images/MI_porftolio_project-300.jpg 300w" sizes="(min-width: 992px) 33.3vw, (min-width: 768px) 50vw, 100vw" data-toggle="modal" data-target="#m-institute" alt="Mahudah Institute Website">
+              <h4>Mahmudah Institute</h4>
+              <a href="https://www.mahmudahinstitute.org">https://www.mahmudahinstitute.org</a>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 portfolio-piece">
+              <img class="img-responsive" src="images/timothymoore-400.jpg" srcset="images/timothymoore-500.jpg 500w, images/timothymoore-400.jpg 400w, images/timothymoore-300.jpg 300w" sizes="(min-width: 992px) 33.3vw, (min-width: 768px) 50vw, 100vw" data-toggle="modal" data-target="#tm-portfolio" alt="Portfolio Website">
+              <h4>Portfolio Page</h4>
+              <a href="https://www.timothymoore.me">https://www.timothymoore.me</a>
+            </div>
+
+            <!-- Modal for Augusta Retina Consultants -->
+            <div class="modal fade" id="aug-retina" tabindex="-1" role="dialog" aria-labelledby="aug-retina-label">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="aug-retina-label">Augusta Retina Consultants Website</h4>
+                  </div>
+                  <div class="modal-body">
+                    <img class="img-responsive" src="images/Aug_Retina_Portfolio-400.jpg" srcset="images/Aug_Retina_Portfolio-500.jpg 500w, images/Aug_Retina_Portfolio-400.jpg 400w" sizes="(min-width: 601px) 80vw, 100vw" alt="Augusta Retina Consultants Website">
+                    <p>Practice website for ophthalmologist's office built with WordPress. I used the Genesis Framework and customized a Genesis child theme.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Used code from Bootstrap documentation modal example as the basis for customization of the following modals -->
+
+            <!-- Modal for Mahmudah Institute of Wellness and Mindful Living -->
+            <div class="modal fade" id="m-institute" tabindex="-1" role="dialog" aria-labelledby="m-institute-label">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="m-institute-label">Mamudah Institute of Wellness and Mindful Living Website</h4>
+                  </div>
+                  <div class="modal-body">
+                    <img class="img-responsive" src="images/MI_porftolio_project-400.jpg" srcset="images/MI_porftolio_project-500.jpg 500w, images/MI_porftolio_project-400.jpg 400w" sizes="(min-width: 601px) 80vw, 100vw" data-toggle="modal" data-target="#m-institute" alt="Mahudah Institute Website">
+                    <p>Website for non-profit organization. I used the Genesis Framework and customized a Genesis child theme.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal for portfolio site -->
+            <div class="modal fade" id="tm-portfolio" tabindex="-1" role="dialog" aria-labelledby="tm-portfolio-label">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="tm-portfolio-label">Timothy Moore Portfolio Site</h4>
+                  </div>
+                  <div class="modal-body">
+                    <img class="img-responsive" src="images/timothymoore-400.jpg" srcset="images/timothymoore-500.jpg 500w, images/timothymoore-400.jpg 400w" sizes="(min-width: 601px) 80vw, 100vw" data-toggle="modal" data-target="#tm-portfolio" alt="Portfolio Website">
+                    <p>This is my portfolio site for freelance WordPress work through my company, Silver Cittern Web Development, LLC. I used the Genesis Framework and customized a Genesis child theme.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div> <!-- End .row for Featured work example pieces -->
+      </main>
+
+      <footer>
+        <!-- Footer Menu -->
+        <div class="row">
+          <ul class="col-md-12">
+            <li><a href="#">Home</a></li>
+            <li>·</li>
+            <li><a href="#">About</a></li>
+            <li>·</li>
+            <li><a href="#">Resume</a></li>
+            <li>·</li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Copyright -->
+        <div class="row">
+          <p class="md-col-12">© 2015 Timothy Moore</p>
+        </div>
+      </footer>
+
+    </div> <!-- End .container -->
+
+    <!-- jQuery, Bootstrap, and custom javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menu-highlight.js"></script>
+  </body>
+</html>

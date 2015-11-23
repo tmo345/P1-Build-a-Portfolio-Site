@@ -1,0 +1,363 @@
+/* TODO: Vendor prefixes */
+
+/**********
+General
+**********/
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #0e1912;
+}
+
+
+
+/**********
+Header
+**********/
+
+header {
+  margin-top: 20px;
+}
+
+.logo {
+  padding-top: 10px;
+}
+
+.title-area {
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.title-area h1 {
+  font: normal normal 3.5em/1.1 "Amaranth", sans-serif;
+}
+
+.title-area h1:first-letter,
+.last-name-first-letter  {
+  font-size: 1.2em;
+}
+
+.title-area h2 {
+  margin-top: 10px;
+  font: normal normal 2em/1.1 "Ubuntu Condensed", sans-serif;
+}
+
+
+
+/**********
+Navigation
+**********/
+
+.navbar {
+  background-color: #0e1912;
+  margin-top: 20px;
+}
+
+.navbar li {
+  font-size: 1.5em;
+}
+
+/* Override Bootstrap nav colors and hover/focus */
+.navbar-default .navbar-nav > .active > a {
+  background-color: #f4dea2;
+  color: #0d1b13;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #e7e7e7;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: #0e1912;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #0f3425;
+  background-color: #f4dea2;
+}
+
+/* .remove-highlight for active page on hover/focus of other menu items - see menu-highlight.js  */
+.navbar-default .navbar-nav > .active .remove-highlight {
+  background-color: #0e1912;
+  color: #fff;
+}
+
+
+/**********
+Main
+**********/
+
+main {
+  margin-top: 20px;
+}
+
+/* Large featured image */
+.large-featured {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 2px #e6e6e6;
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+}
+
+/* Featured work section */
+.featured-heading {
+  font: normal normal 2.4em/1.1 "Ubuntu Condensed", sans-serif;
+  color: #374d40;
+  margin-top: 30px;
+  padding: 0px 0 20px 10px;
+}
+
+.portfolio-piece {
+  text-align: center;
+  padding: 0 15px 15px 15px;
+  margin-bottom: 10px;
+}
+
+.portfolio-piece h4 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.portfolio-piece img {
+  border: 1.75px solid #0f3425;
+  border-radius: 3px;
+}
+
+.portfolio-piece img:hover,
+.portfolio-piece img:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.portfolio-piece a {
+  text-decoration: none;
+  color: #1e6a4c;
+  font-size: 1.1em;
+}
+
+.portfolio-piece a:hover,
+.portfolio-piece a:focus {
+  color: #1d1dff;
+}
+
+/* Modal customization to override bootstrap defaults */
+.modal-header {
+  background-color: #1e6a4c;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.modal-header button {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.modal img, .modal p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.modal p {
+  margin-top: 15px;
+}
+
+.modal img {
+  border: 1.75px solid #0f3425;
+  border-radius: 3px;
+}
+
+.modal-footer {
+  border: none;
+}
+
+.modal-footer button {
+  background-color: #0e1912;
+  color: #fff;
+}
+
+.modal-footer button:hover,
+.modal-footer button:focus {
+  background-color: #f4dea2;
+  color: #0e1912;
+}
+
+
+/*******
+Footer
+*******/
+
+footer {
+  background-color: #0e1912;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 3px;
+  border: 1px solid #e7e7e7;
+}
+
+footer p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 20px 0 10px;
+  font-size: 1.2em;
+}
+
+footer ul li a {
+  color: #fff;
+  padding: 20px;
+}
+
+footer ul li a:hover,
+footer ul li a:focus {
+  color: #f4dea2;
+  text-decoration: none;
+}
+
+
+/**********
+Media Queries
+Minor break points to accompany grid based Bootstrap breakpoints
+**********/
+
+@media screen and (max-width: 1200px) {
+  .title-area h1 {
+    font-size: 3em;
+  }
+
+  .title-area h2 {
+    font-size: 1.8em;
+  }
+
+  .nav li {
+    font-size: 1.3em;
+  }
+
+  .portfolio-piece h4 {
+    font-size: 1.2em;
+  }
+}
+
+
+@media screen and (max-width: 990px) {
+  .logo {
+    width: 20%;
+  }
+
+  .title-area h1 {
+    font-size: 2.5em;
+  }
+
+  .title-area h2 {
+    font-size: 1.5em;
+  }
+
+  .nav li {
+    font-size: 1.2em;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .logo {
+    width: 22%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 30%;
+  }
+
+  .modal img, .modal p {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 590px) {
+
+  .portfolio-piece h4 {
+    font-size: 1.1em;
+  }
+
+}
+
+
+@media screen and (max-width: 550px) {
+  .portfolio-piece {
+    width: 100%;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-bottom: 15px;
+  }
+
+  .portfolio-piece:last-child {
+    margin-bottom: 0;
+  }
+
+  .featured-heading {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title-area h1 {
+    font-size: 2.25em;
+  }
+
+  .title-area h2 {
+    font-size: 1.25em;
+  }
+
+  .featured-heading {
+    font-size: 2.1em;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  /* Center header elements */
+  .logo {
+    width: 40%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .portfolio-piece {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .title-area {
+    text-align: center;
+  }
+
+  footer ul li,
+  footer p {
+    font-size: 1em;
+  }
+
+  footer ul li a {
+    padding-right: 10px;
+  }
+}
